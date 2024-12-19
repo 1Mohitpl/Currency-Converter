@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency - Converter - app</title>
+    <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+    <div class="navber">
+        <div class="heading">
+             <h1>Currency-App</h1>
+        </div>
+         <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+            
+         </nav>
+    </div>
+
+    <div class="container">
+        <h1>Select Currency to convert </h1>
+        <form action="/action.php" method="post"> 
+          
+            <select name="Currency">
+                <option value="USD">US Dollar</option>
+                <option value="INR">Indian Rupee</option>
+                <option value="Euro">Euro</option>
+                <option value="STARLING">Starling</option>
+                <option value="Australian Dollar">Australian Dollar</option>
+            </select>
+            <label for="Amount">
+                <h2>Amount of Currency :</h2>
+            </label>
+            <input id="value" type="number" name="quantity" min="1" max="10">
+            <button id="bttn" class="btn" type="submit">Submit</button>
+        </form>
+
+        <div class="output">
+            <table>
+                <h2>Converted Currency Data :</h2>
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Currency code</th>
+                        <th>Value</th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+                <tfoot>
+                  
+                </tfoot>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="footer"> 
+        <footer>
+             <h2>Copyright &copy; All rights reserved</h2>
+        </footer>
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
